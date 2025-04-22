@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navigation-bar">
+        <div class="container-fluid">
+          <a href="index.html" class="logo-container">
+            <img src="./assets/marca-com-1.svg" class="brand-logo" />
+          </a>
+          <h1 class="brand-title">TU TIENDA.COM</h1>
+          <button
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gender-list">
+              <li class="">
+                <a href="./hombre.html" class="nav-link enlace">Hombre</a>
+              </li>
+              <li class="">
+                <a href="./mujer.html" class="nav-link enlace">Mujer</a>
+              </li>
+              <li class="">
+                <a href="#" class="nav-link enlace">Niño</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav gender-list">
+              <li class="nav-item-active">
+                <button class="nav-link enlace">Mi carrito</button>
+              </li>
+              <li class="nav-item-active">
+                <button class="nav-link enlace">Iniciar sesion</button>
+              </li>
+            </ul>
+
+            <input type="text" placeholder="Buscar..." class="search-input" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="carousel-section">
+      <div id="clothesCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="assets/c-1.jpg" class="d-block w-100 c-image" />
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="assets/c-2.jpeg"
+              class="d-block w-100 c-image"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="assets/c-3.avif"
+              class="d-block w-100 c-image"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#clothesCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#clothesCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container-fluid products-section">
+      <div class="row justify-content-around products-section-div">
+        <article class="col-lg-2 col-6 text-center product-article">
+          <img src="assets/clothes.webp" class="clotheExample" />
+          <div class="details-div d-flex flex-column">
+            <p>Titulo del producto</p>
+            <p class="product-price">Precio del producto</p>
+          </div>
+        </article>
+        <article class="col-lg-2 col-6 text-center product-article">
+          <img src="assets/clothes.webp" class="clotheExample" />
+          <div class="details-div">
+            <p>Titulo del producto</p>
+            <p class="product-price">Precio del producto</p>
+          </div>
+        </article>
+        <article class="col-lg-2 text-center product-article">
+          <img src="assets/clothes.webp" class="clotheExample" />
+          <div class="details-div">
+            <p>Titulo del producto</p>
+            <p class="product-price">Precio del producto</p>
+          </div>
+        </article>
+
+        <article class="col-lg-2 text-center product-article hidden">
+          <img src="assets/clothes.webp" class="clotheExample" />
+          <div class="details-div">
+            <p>Titulo del producto</p>
+            <p class="product-price">Precio del producto</p>
+          </div>
+        </article>
+
+        <article class="col-lg-2 text-center product-article hidden">
+          <img src="assets/clothes.webp" class="clotheExample" />
+          <div class="details-div">
+            <p>Titulo del producto</p>
+            <p class="product-price">Precio del producto</p>
+          </div>
+        </article>
+
+        <article class="col-lg-2 text-center product-article hidden">
+          <img src="assets/clothes.webp" class="clotheExample" />
+          <div class="details-div">
+            <p>Titulo del producto</p>
+            <p class="product-price">Precio del producto</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <section class="container-fluid contenedor-category-section">
+      <div class="row row-cols-2 category-section">
+        <div class="col-lg-2 category-div">
+          <h1>CATEGORIAS</h1>
+          <ul class="navbar-nav category-list">
+            <li class="">
+              <a href="./hombre.html" class="nav-link enlace-category"
+                >Hombre</a
+              >
+            </li>
+            <li class="">
+              <a href="./mujer.html" class="nav-link enlace-category">Mujer</a>
+            </li>
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Niño</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 category-div">
+          <h1>INDUMENTARIA</h1>
+          <ul class="navbar-nav category-list">
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Remeras</a>
+            </li>
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Pantalones</a>
+            </li>
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Buzos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 category-div">
+          <h1>REDES SOCIALES</h1>
+          <ul class="navbar-nav category-list">
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Instagram</a>
+            </li>
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Facebook</a>
+            </li>
+            <li class="">
+              <a href="#" class="nav-link enlace-category">Tik tok</a>
+            </li>
+          </ul>
+        </div>
+        <form action="" class="col-lg-4 login-form">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="123@gmail.com" />
+          <label for="password">Password</label>
+          <input type="password" placeholder="contraseñasecreta123" />
+          <div class="login-btn-div col-sm-12">
+            <button class="login-btn">Registrarse</button>
+            <button class="login-btn">Ya tengo una cuenta</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
